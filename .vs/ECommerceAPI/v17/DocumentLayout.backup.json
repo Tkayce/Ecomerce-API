@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\user\\source\\repos\\ecommerceapi\\ecommerceapi\\migrations\\20250124180810_appcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\migrations\\20250124180810_appcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\user\\source\\repos\\ecommerceapi\\ecommerceapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|c:\\users\\user\\source\\repos\\ecommerceapi\\ecommerceapi\\model\\appcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D71867-0BCE-4160-9777-4DCCAAE6D704}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\model\\appcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250124180810_AppCustomers.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Migrations\\20250124180810_AppCustomers.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Migrations\\20250124180810_AppCustomers.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Migrations\\20250124180810_AppCustomers.cs",
+              "RelativeToolTip": "ECommerceAPI\\Migrations\\20250124180810_AppCustomers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T18:08:11.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Model\\AppCustomer.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Model\\AppCustomer.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Model\\AppCustomer.cs",
+              "RelativeToolTip": "ECommerceAPI\\Model\\AppCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T17:53:53.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T17:45:54.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
