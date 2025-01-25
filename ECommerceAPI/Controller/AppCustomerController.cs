@@ -1,8 +1,13 @@
 ﻿using ECommerceAPI.DTOs;
 using ECommerceAPI.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace ECommerceAPI.Controller
 {
@@ -16,6 +21,8 @@ namespace ECommerceAPI.Controller
         {
             _context = context;
         }
+
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register(AppCustomerDTO request)
         {
@@ -39,23 +46,41 @@ namespace ECommerceAPI.Controller
             return Ok("Registration successful.");
         }
 
-       //Endpont for login
+        //Endpont for login
+        [AllowAnonymous]
         [HttpPost("login")]
-        public IActionResult Login(LoginDTO request)
+        public IActionResult Login([FromBody] LoginDTO request)
         {
-           
-            var customer = _context.AppCustomers.FirstOrDefault(c => c.Email == request.Email);
-            if (customer == null)
-                return BadRequest("User not found.");
+            // Simulated user validation (use database in production)
+            if (request.Email == "test@example.com" && request.Password == "password")
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.UTF8.GetBytes("YourSecretKey");
 
-           
-            if (!BCrypt.Net.BCrypt.Verify(request.Password, customer.PasswordHash))
-                return BadRequest("Invalid password.");
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new[]
+                    {
+                new Claim(ClaimTypes.Name, "testUser"),
+                new Claim(ClaimTypes.Role, "User") // Optional: add roles
+            }),
+                    Expires = DateTime.UtcNow.AddHours(1),
+                    SigningCredentials = new SigningCredentials(
+                        new SymmetricSecurityKey(key),
+                        SecurityAlgorithms.HmacSha256Signature)
+                };
 
-            // Ideally, generate and return JWT (we'll implement this later)
-            return Ok("Login successful.");
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                var tokenString = tokenHandler.WriteToken(token);
+
+                return Ok(new { Token = tokenString });
+            }
+
+            return Unauthorized();
         }
+
         // Fetch User by Email
+        [Authorize]
         [HttpGet("get-by-email")]
         public IActionResult GetUserByEmail(string email)
         {
@@ -78,6 +103,7 @@ namespace ECommerceAPI.Controller
         }
 
         // Profile Management Endpoint
+        [AllowAnonymous]
         [HttpGet("profile/{id}")]
         public IActionResult GetProfile(int id)
         {
@@ -92,7 +118,7 @@ namespace ECommerceAPI.Controller
                 customer.Email
             });
         }
-         
+        [AllowAnonymous]
         [HttpPut("profile/{id}")]
         public IActionResult UpdateProfile(int id, UpdateAppCostumerDTO request)
         {
