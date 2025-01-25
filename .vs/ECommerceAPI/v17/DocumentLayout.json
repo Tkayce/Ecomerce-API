@@ -1,12 +1,101 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\AppCustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ECommerceAPI\\DTOs\\AppCustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ECommerceAPI\\DTOs\\LoginDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ECommerceAPI\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Controller\\AppCustomerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ECommerceAPI\\Controller\\AppCustomerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Model\\AppCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ECommerceAPI\\Model\\AppCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T15:30:19.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppCustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\AppCustomerDTO.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\AppCustomerDTO.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\DTOs\\AppCustomerDTO.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\AppCustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T15:29:11.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T15:23:03.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Controller\\AppCustomerController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controller\\AppCustomerController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Controller\\AppCustomerController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controller\\AppCustomerController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T18:50:06.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Model\\AppCustomer.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Model\\AppCustomer.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ECommerceAPI\\ECommerceAPI\\Model\\AppCustomer.cs",
+              "RelativeToolTip": "ECommerceAPI\\Model\\AppCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T18:47:10.801Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

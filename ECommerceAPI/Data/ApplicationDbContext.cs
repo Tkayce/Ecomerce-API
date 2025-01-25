@@ -12,4 +12,3 @@ public class ApplicationDbContext : DbContext
     public DbSet<AppCustomer> AppCustomers { get; set; }
 
 }
-
