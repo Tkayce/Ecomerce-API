@@ -55,6 +55,27 @@ namespace ECommerceAPI.Controller
             // Ideally, generate and return JWT (we'll implement this later)
             return Ok("Login successful.");
         }
+        // Fetch User by Email
+        [HttpGet("get-by-email")]
+        public IActionResult GetUserByEmail(string email)
+        {
+            // Find user by email
+            var user = _context.AppCustomers.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            // Return user data
+            return Ok(new
+            {
+                user.Id,
+                user.Name,
+                user.Email,
+                user.PasswordHash // I will remove this in production stage!
+            });
+        }
 
         // Profile Management Endpoint
         [HttpGet("profile/{id}")]

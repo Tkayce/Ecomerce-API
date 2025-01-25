@@ -143,3 +143,5 @@ C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\runtimes\w
 C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.sourcelink.json
+C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\USER\source\repos\ECommerceAPI\ECommerceAPI\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
