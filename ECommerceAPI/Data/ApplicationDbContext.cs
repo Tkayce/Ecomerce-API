@@ -1,5 +1,7 @@
-﻿using ECommerceAPI.Model;
+﻿
+using ECommerceAPI.Model;
 using Microsoft.EntityFrameworkCore;
+
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
@@ -10,5 +12,4 @@ public class ApplicationDbContext : DbContext
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<AppCustomer> AppCustomers { get; set; }
-
 }

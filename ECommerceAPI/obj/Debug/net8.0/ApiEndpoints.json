@@ -1,16 +1,16 @@
 [
   {
     "ContainingType": "ECommerceAPI.Controller.AppCustomerController",
-    "Method": "GetUserByEmail",
-    "RelativePath": "api/AppCustomer/get-by-email",
-    "HttpMethod": "GET",
+    "Method": "DeleteCustomer",
+    "RelativePath": "{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -18,14 +18,93 @@
   {
     "ContainingType": "ECommerceAPI.Controller.AppCustomerController",
     "Method": "Login",
-    "RelativePath": "api/AppCustomer/login",
+    "RelativePath": "login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "ECommerceAPI.DTOs.LoginDTO",
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceAPI.Controller.CustomerController",
+    "Method": "PlaceOrder",
+    "RelativePath": "orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "ECommerceAPI.Model.Order",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceAPI.Controller.CustomerController",
+    "Method": "GetOrdersByCustomer",
+    "RelativePath": "orders/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceAPI.Controller.CustomerController",
+    "Method": "GetOrderDetails",
+    "RelativePath": "orders/details/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceAPI.Controller.CustomerController",
+    "Method": "GetProducts",
+    "RelativePath": "products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceAPI.Controller.CustomerController",
+    "Method": "GetProductById",
+    "RelativePath": "products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -34,7 +113,7 @@
   {
     "ContainingType": "ECommerceAPI.Controller.AppCustomerController",
     "Method": "GetProfile",
-    "RelativePath": "api/AppCustomer/profile/{id}",
+    "RelativePath": "profile/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -50,7 +129,7 @@
   {
     "ContainingType": "ECommerceAPI.Controller.AppCustomerController",
     "Method": "UpdateProfile",
-    "RelativePath": "api/AppCustomer/profile/{id}",
+    "RelativePath": "profile/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -61,9 +140,19 @@
         "IsRequired": true
       },
       {
-        "Name": "request",
-        "Type": "ECommerceAPI.DTOs.UpdateAppCostumerDTO",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -71,38 +160,27 @@
   {
     "ContainingType": "ECommerceAPI.Controller.AppCustomerController",
     "Method": "Register",
-    "RelativePath": "api/AppCustomer/register",
+    "RelativePath": "register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "ECommerceAPI.DTOs.AppCustomerDTO",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ECommerceAPI.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ECommerceAPI.WeatherForecast, ECommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

@@ -12,5 +12,8 @@ namespace ECommerceAPI.Model
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
         public string OrderStatus { get; set; }
+
+        // Ensure this exists
+        public List<Product> Products { get; set; } = new List<Product>();
     }
 }

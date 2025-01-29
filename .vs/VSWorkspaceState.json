@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ECommerceAPI"
+    "\\ECommerceAPI",
+    "\\ECommerceAPI\\Controller"
   ],
-  "SelectedNode": "\\ECommerceAPI\\Properties",
+  "SelectedNode": "\\ECommerceAPI\\Controller\\CustomerController.cs",
   "PreviewInSolutionExplorer": false
 }
